@@ -1,0 +1,134 @@
+
+.titlePage {
+  color: var(--secondary);
+  margin-bottom: 40px;
+  max-width: 60%;
+}
+
+
+.pagination {
+  justify-content: center;
+  align-items: center;
+}
+
+.breadCrumb {
+  background: linear-gradient(260.8deg, var(--blue) 46.21%, rgba(0, 145, 208, 0.88) 93.84%);
+  height: 600px;
+  position: relative;
+  padding: 40px 5%;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.breadCrumb.colored {
+  background: #252836;
+}
+
+.breadCrumb::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 20%;
+  opacity: .4;
+  height: 100%;
+  background: url("../images/breadcrumb/breadBefore.png") center center no-repeat;
+  background-size: contain;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.breadCrumb .top {
+  position: relative;
+  z-index: 2;
+}
+
+.breadCrumb .top ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.breadCrumb .top ul li,
+.breadCrumb .top ul a {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.breadCrumb .top ul a:hover {
+  color: var(--primary);
+}
+
+.breadCrumb .bottom {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.breadCrumb .bottom h1 {
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.breadCrumb .bottom p {
+  color: var(--white);
+  font-weight: normal;
+  line-height: 1.4;
+  max-width: 52%;;
+}
+
+.breadCrumb .image {
+  position: absolute;
+  top: 80px;
+  width: 35%;
+  height: 100%;
+  z-index: 2;
+  right: 5%;
+}
+
+.breadCrumb .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+
+  .breadCrumb {
+    height: 540px;
+    margin-bottom: 20rem;
+    padding-bottom: 15rem;
+  }
+
+  .breadCrumb::before {
+    width: 60%;
+  }
+
+  .breadCrumb .top ul {
+    flex-wrap: wrap;
+  }
+
+  .breadCrumb .bottom p {
+    max-width: 100%;
+  }
+
+  .breadCrumb .image {
+    width: 90%;
+    bottom: -40%;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    height: 360px;
+  }
+  .tabsContainer.pb-5 {
+    padding-bottom: 20px !important;
+  }
+  .titlePage{
+    max-width: 100%;
+  }
+}

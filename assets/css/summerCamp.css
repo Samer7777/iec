@@ -1,0 +1,182 @@
+
+.summerCamp iframe{
+  border-radius: 10px;
+}
+
+.news-swiper,
+.testimonial-section {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.swiper-container {
+  /* width: 80%; */
+  margin: 0 auto !important;
+}
+
+.testimonial-card {
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--white);
+  border: 1px solid #2C362B33;
+  overflow: hidden;
+}
+
+.testimonial-img {
+  flex: 1;
+  background-color: #2d3627;
+  padding: 15px;
+  border-radius: 10px 0 0 10px;
+  max-width: 80px;
+}
+
+.testimonial-img img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  outline: 5px solid #fff;
+  margin-left: 30px;
+  display: block;
+  margin-top: 1.8rem;
+}
+
+.testimonial-content {
+  flex: 2;
+  padding: 20px;
+  text-align: left;
+}
+
+.testimonial-content h4 {
+  color: var(--primary);
+}
+.testimonial-content blockquote{
+  text-align: justify;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: var(--primary);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--primary);
+}
+
+/* Progress Bar */
+.swiper-pagination {
+  height: 4px;
+  background-color: #e0e0e0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #F5A623;
+  width: 100px !important;
+  height: 4px;
+  border-radius: 0;
+}
+.swiper-pagination.swiper-pagination-progressbar,
+.swiper-button-prev,
+.swiper-button-next {
+  position: relative !important;
+  inset: auto !important;
+}
+.navagationsContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 30px;
+}
+.btnsSlider {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+.btnsSlider .swiper-button-prev,
+.btnsSlider .swiper-button-next {
+  width: 50px;
+  height: 50px;
+  color: var(--white);
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+display: none;
+}
+.navagationsContainer .swiper-pagination-progressbar {
+  background: #DC993726;
+  height: 8px;
+  border-radius: 30px;
+  width: 100%;
+}
+.navagationsContainer .swiper-pagination-progressbar  .swiper-pagination-progressbar-fill{
+  background: var(--primary);
+  border-radius: 30px;
+  height: 8px;
+}
+
+.joinCamp{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.joinCamp .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
+  background: var(--primary) url("../images/breadcrumb/breadBefore.png") no-repeat top right;
+  background-size: contain;
+  padding: 30px;
+  color: var(--white);
+  border-radius: 10px;
+}
+
+
+
+.summerPrograms .item {
+  display: flex;
+  flex-direction: column;
+}
+
+.summerPrograms .item .image {
+  overflow: hidden;
+  width: 100%;
+  height: 220px;
+  border-radius: 10px 10px 0 0;
+}
+
+.summerPrograms .item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.summerPrograms .item .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px;
+  background: var(--white);
+  border: 1px solid #2C362B33;
+  border-radius: 0 0 10px 10px;
+}
+
+.summerPrograms .item .text h5 {
+  margin-bottom: 0;
+}
+
+.summerPrograms .item .text p {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+  .testimonial-img img{
+    margin-left: 25px;
+  }
+}

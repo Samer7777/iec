@@ -1,0 +1,166 @@
+.tabsContainer .tabsButtons {
+  padding: 5px;
+  background: rgba(44, 54, 43, .1019607843);
+  border-radius: 50px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 50px;
+}
+
+.tabsContainer .tabsButtons .tabBtns {
+  padding: 10px 30px;
+  color: var(--secondary);
+  border-radius: 50px;
+  transition: .3s ease-in-out;
+  font-weight: 400;
+  background: none;
+  border: none;
+}
+
+.tabsContainer .tabsButtons .tabBtns.active {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.tabsContainer .content h3 {
+  color: var(--blue);
+  margin-bottom: 15px;
+}
+
+.tabsContainer .content strong {
+  color: var(--blue);
+  margin-bottom: 15px;
+  display: block;
+}
+
+.tabsContainer .content p {
+  color: var(--black);
+  line-height: 1.9;
+  max-width: 93%;
+}
+
+.ourHistoryPdf {
+  background: rgba(0, 145, 208, .0509803922);
+  padding: 60px 0 100px 0;
+  margin-bottom: 100px;
+}
+
+.ourHistoryPdf h2 {
+  margin-bottom: 60px;
+}
+
+.ourHistoryPdf .pdfItem {
+  border-radius: 10px;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ourHistoryPdf .pdfItem .image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 330px;
+  background: rgba(0, 145, 208, .2);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.ourHistoryPdf .pdfItem .text {
+  border: 1px solid rgba(44, 54, 43, .2);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.ourHistoryPdf .pdfItem .text h4 {
+  margin-bottom: 15px;
+}
+
+.ourHistoryPdf .pdfItem .text .mainBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--blue);
+  padding: 10px 20px;
+  color: var(--blue);
+  font-size: 1.1rem;
+  font-weight: 400;
+  position: relative;
+  transition: .4s;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.ourHistoryPdf .pdfItem .text .mainBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue);
+  z-index: -1;
+  transition: .4s;
+  border-radius: 40px;
+}
+
+.ourHistoryPdf .pdfItem .text .mainBtn:hover {
+  color: var(--white);
+}
+
+.ourHistoryPdf .pdfItem .text .mainBtn:hover svg path {
+  fill: var(--white);
+}
+
+.ourHistoryPdf .pdfItem .text .mainBtn:hover::before {
+  right: 0;
+}
+
+.ourHistoryPdf .pdfItem .text .mainBtn img {
+  max-width: 15px;
+  object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+
+  .tabsContainer .tabsButtons {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .tabsContainer .tabsButtons .tabBtns {
+    font-size: 1.06rem;
+    width: 100%;
+  }
+
+  .tabsContainer .content p {
+    max-width: 100%;
+  }
+  .ourHistoryPdf .pdfItem .image {
+    height: 220px;
+  }
+
+  .ourHistoryPdf {
+    padding: 40px 0 40px 0;
+    margin-bottom: 100px;
+  }
+  .tabsContainer.pb-5 {
+    padding-bottom: 20px !important;
+  }
+}

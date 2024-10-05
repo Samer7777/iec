@@ -1,0 +1,131 @@
+
+.missionVison {
+  background: rgba(44, 54, 43, .0509803922);
+  padding: 70px 0
+}
+
+.missionVison .item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(44, 54, 43, .1490196078);
+  width: 100%;
+  background: var(--white);
+  min-height: 425px;
+}
+
+.missionVison .item .title {
+  display: flex;
+  align-items: center;
+  gap: 30px
+}
+
+.missionVison .item .title h3{
+  margin-bottom: 0;
+}
+.missionVison .item .title .image {
+  width: 75px;
+  height: 75px;
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+.missionVison .item .title .image::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
+  background-color: var(--primary);
+  border-radius: 50%;
+  opacity: .3;
+  z-index: 0;
+  transition: .4s;
+}
+
+.missionVison .item .content p {
+  color: var(--secondary);
+  line-height: 1.9;
+}
+
+.moreAbout {
+  padding: 50px 0 70px 0;
+}
+
+.moreAbout h2 {
+  margin-bottom: 40px;
+}
+
+.moreAbout .item {
+  display: flex;
+  flex-direction: column;
+}
+
+.moreAbout .item .image {
+  overflow: hidden;
+  width: 100%;
+  height: 280px;
+  border-radius: 10px;
+}
+
+.moreAbout .item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.moreAbout .item .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px;
+  background: var(--white);
+  box-shadow: 0px 0px 30px 0px rgba(182, 182, 182, 0.2509803922);
+  border-top: 11px solid var(--blue);
+  border-radius: 10px;
+  max-width: 85%;
+  margin-top: -70px;
+  border-top-left-radius: 0;
+}
+
+.moreAbout .item .text h5 {
+  margin-bottom: 0;
+}
+
+.moreAbout .item .text p {
+  line-height: 1.9;
+  color: var(--secondary);
+  height: 6.4rem;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+
+  .missionVison .item {
+    padding: 40px 25px;
+    min-height: 100px;
+  }
+
+  .missionVison .item .title h3 {
+    font-size: 1.5rem;
+  }
+
+  .moreAbout .item .text {
+    margin-bottom: 2rem;
+  }
+  .moreAbout .item .text p {
+    height: auto;
+  }
+
+  .moreAbout {
+    padding: 40px 0 40px 0;
+  }
+
+}
